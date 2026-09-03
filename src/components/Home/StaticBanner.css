@@ -1,0 +1,50 @@
+.static-banner {
+  position: relative;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* Ultra-HD & Crystal Clear Modern Sanitary Ware / Luxury Bathroom Interior */
+  background-image: url('https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.static-banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 10, 10, 0.65); /* Thoda lighter overlay taaki image clear aur vibrant dikhe */
+  z-index: 1;
+}
+
+.static-banner-content {
+  position: relative;
+  z-index: 2;
+  max-width: 650px;
+  padding: 0 20px;
+}
+
+.static-banner-content h2 {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  line-height: 1.3;
+  color: #ffffff;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .static-banner {
+    background-attachment: scroll;
+    height: 40vh;
+  }
+  .static-banner-content h2 {
+    font-size: 24px;
+  }
+}

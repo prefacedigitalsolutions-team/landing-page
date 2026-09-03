@@ -1,0 +1,242 @@
+/* Hero Section Main Wrapper */
+.hero-section {
+  background-color: #0b0b0b;
+  min-height: 100vh;
+  padding: 140px 60px 60px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+/* Layout Grid */
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Left Content Styles */
+.hero-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.hero-subtitle {
+  display: block;
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  color: #37a2d4;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.hero-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 46px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+
+.gold-text {
+  color: #37a2d4;
+  text-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+}
+
+.hero-description {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  color: #b0b0b0;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+/* Action Buttons */
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #5a93ad 0%, #37a2d4 100%);
+  color: #0b0b0b;
+  padding: 14px 28px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(55, 194, 212, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(55, 167, 212, 0.5);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #ffffff;
+  padding: 14px 28px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  border-color: #37a2d4;
+  color: #37a2d4;
+  transform: translateY(-2px);
+}
+
+/* Right Mockup Image */
+.hero-mockup {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.mockup-img {
+  max-width: 115%; /* Image ka size thoda bada karne ke liye 100% se badha kar 115% kiya hai */
+  width: 115%;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.8));
+  transform: scale(1.08); /* Isse image aur achhi tarah scale hokar badi dikhegi */
+}
+
+/* Bottom Stats Bar */
+.hero-stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  margin: 60px auto 0 auto;
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 40px;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.stat-icon {
+  font-size: 28px;
+  color: #d4af37;
+}
+
+.stat-item h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 4px 0;
+}
+
+.stat-item p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  color: #999999;
+  margin: 0;
+}
+
+
+
+
+
+
+@media (max-width: 992px) {
+  .hero-section {
+    padding: 100px 24px 40px 24px;
+    min-height: auto;
+  }
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+  .hero-content {
+    max-width: 100%;
+  }
+  .hero-buttons {
+    justify-content: center;
+  }
+  .hero-mockup {
+    justify-content: center;
+    width: 100%;
+  }
+  .mockup-img {
+    max-width: 90%;
+    width: 90%;
+    transform: scale(1);
+  }
+  .hero-stats {
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  .stat-item {
+    flex: 1 1 40%;
+    justify-content: center;
+    text-align: left;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section {
+    padding: 90px 16px 30px 16px;
+  }
+  .hero-title {
+    font-size: 32px;
+    line-height: 1.3;
+  }
+  .hero-description {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+  .btn-primary, .btn-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+  .mockup-img {
+    max-width: 100%;
+    width: 100%;
+  }
+  .hero-stats {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  .stat-item {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+}

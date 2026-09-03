@@ -1,0 +1,110 @@
+.process-section {
+  background-color: #0f0f0f;
+  padding: 60px 20px;
+  font-family: inherit;
+  color: #fff;
+}
+
+.process-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.process-header {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 80px auto;
+}
+
+.process-subtitle {
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  color: #fcfcfc;
+  display: block;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.process-main-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #33a8ec;
+  margin: 0;
+
+  line-height: 1.2;
+}
+
+/* Horizontal Minimal Layout (No Boxes) */
+.process-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  position: relative;
+}
+
+.process-step {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.process-step-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.process-number {
+  font-size: 16px;
+  font-weight: 700;
+  color: #33a8ec;
+  margin-right: 15px;
+  letter-spacing: 1px;
+}
+
+/* Subtle connecting line next to numbers */
+.process-line {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  flex-grow: 1;
+}
+
+.process-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  margin: 0 0 10px 0;
+  letter-spacing: -0.3px;
+}
+
+.process-desc {
+  font-size: 14px;
+  color: #888;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Hover effect on text */
+.process-step:hover .process-title {
+  color: #33a8ec;
+  transition: color 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .process-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
+}
+
+@media (max-width: 640px) {
+  .process-wrapper {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .process-main-title {
+    font-size: 28px;
+  }
+}
